@@ -1,0 +1,10 @@
+APP_RABBITMQ_CONNECT_HOST=<RabbitMQ host>
+APP_RABBITMQ_CONNECT_PORT=<RabbitMQ port>
+APP_RABBITMQ_CONNECT_USERNAME=<RabbitMQ username>
+APP_RABBITMQ_CONNECT_PASSWORD=<RabbitMQ password>
+APP_RABBITMQ_QUEUE_POST=<Name of the post queue>
+APP_RABBITMQ_QUEUE_TEST=<Name of the test queue>
+SPRINGDOC_SWAGGER_UI_ENABLED=<Enable OpenAPI Swagger API docs>
+SERVER_SERVLET_CONTEXT_PATH=<Context path for the server>
+
+API_PORT=<Port for the producer service (default: 8080)>
