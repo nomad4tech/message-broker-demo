@@ -1,0 +1,13 @@
+FROM maven:3.8.3-openjdk-17 AS build
+WORKDIR /build
+
+COPY test-consumer/pom.xml ./test-consumer/pom.xml
+COPY test-consumer/src ./test-consumer/src
+RUN mvn -f ./test-consumer/pom.xml clean package -DskipTests
+
+FROM openjdk:18-jdk
+WORKDIR /app
+
+COPY --from=build /build/test-consumer/target/test-consumer*.jar /app/test-consumer.jar
+
+CMD ["java", "-jar", "test-consumer.jar"]

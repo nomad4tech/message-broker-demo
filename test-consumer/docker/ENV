@@ -1,0 +1,6 @@
+SPRING_RABBITMQ_HOST=<RabbitMQ host>
+SPRING_RABBITMQ_PORT=<RabbitMQ port>
+SPRING_RABBITMQ_USERNAME=<RabbitMQ username>
+SPRING_RABBITMQ_PASSWORD=<RabbitMQ password>
+
+APP_RABBITMQ_QUEUE_TEST=<Name of the test queue>

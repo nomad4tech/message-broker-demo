@@ -1,0 +1,12 @@
+services:
+  test-consumer:
+    build:
+      context: ../..
+      dockerfile: Dockerfile-test-consumer
+    
+    networks: 
+      - demo
+
+networks:
+  demo:
+    name: demo
